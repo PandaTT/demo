@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css sprite</title>
+	<style type="text/css">
+		ul.sprite{
+			margin: 0px auto;	/* 让sprite这个盒子居中显示 */
+			width: 300px;		/* 设置sprite盒子的宽度 */
+			border: 1px solid #DB7093;	/* 设置sprite盒子的边框为1像素实线 */
+			padding: 10px;	/* 设置sprite盒子的内边距为10像素 */
+		}
+		ul.sprite li{
+			height: 24px;	/* 设置li标签的高度 */
+			font-size: 14px;	/* 设置字体大小为14像素 */
+			line-height: 24px;	/* 设置元素的行高为24像素 */
+			text-align: left;	/* 设置元素中的文本的水平对齐方式 */
+			overflow: hidden;	/* 清除超出sprite盒子大小的内容 */
+		}
+		ul.sprite li span{
+			float: left;	/* 让所有的span向左浮动 */
+			width: 17px;	/* 设置每个span的宽度 */
+			height: 17px;	/* 设置每个span的高度 */
+			padding-top: 5px;	/* 设置每个span上距离为5像素 */
+			overflow: hidden;	
+			background: url(ico.png) no-repeat; /* 引入精灵图,图像不重复 */
+		}
+		ul.sprite li a{	
+			padding-left: 8px;	/* 增加a标签的内边距 */
+			text-decoration: none;	/* 去除a标签的下划线 */
+		}
+		ul.sprite li span.a1{ background-position: -62px -37px;} 
+		/* 设置背景图片作为对应盒子对象背景后向左"拖动"62px，向上"拖动"37px开始显示此背景图标 */
+		ul.sprite li span.a2{ background-position: -86px -37px;} 
+		/* 设置背景图片作为对应盒子对象背景后向左"拖动"82px，向上"拖动"37px开始显示此背景图标 */
+		ul.sprite li span.a3{ background-position: -110px -37px;} 
+		/* 设置背景图片作为对应盒子对象背景后向左"拖动"110px，向上"拖动"37px开始显示此背景图标 */
+		ul.sprite li span.a4{ background-position: -134px -37px;} 
+		/* 设置背景图片作为对应盒子对象背景后向左"拖动"134px，向上"拖动"37px开始显示此背景图标 */
+		ul.sprite li span.a5{ background-position: -158px -37px;}
+		/* 设置背景图片作为对应盒子对象背景后向左"拖动"158px，向上"拖动"37px开始显示此背景图标 */
+	</style>
+</head>
+<body>
+	<ul class="sprite">
+		<li><span class="a1"></span><a href="#">WORD文章标题</a></li>
+		<li><span class="a2"></span><a href="#">PPT内容标题</a></li>
+		<li><span class="a3"></span><a href="#">Excel内容标题</a></li>
+		<li><span class="a4"></span><a href="#">PDF内容标题</a></li>
+		<li><span class="a5"></span><a href="#">文本文档标题</a></li>
+	</ul>
+</body>
+</html>
